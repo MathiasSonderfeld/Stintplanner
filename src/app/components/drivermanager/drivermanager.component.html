@@ -7,11 +7,12 @@
     <p-tabpanels>
         @for (driver of drivers; track $index) {
             <p-tabpanel [value]="$index">
-                <app-driver [driver]="driver"></app-driver>
+                <app-driver [(driver)]="drivers[$index]"></app-driver>
             </p-tabpanel>
         }
     </p-tabpanels>
 </p-tabs>
+
 @for (driver of drivers; track $index) {
     {{ driver.name }}
     {{ driver.fuelConsumption }}
