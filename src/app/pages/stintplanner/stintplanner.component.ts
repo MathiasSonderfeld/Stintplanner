@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { NavComponent } from '../../nav/nav.component';
-import { DrivermanagerComponent } from '../drivermanager/drivermanager.component';
 import { PanelModule } from 'primeng/panel';
+import { DrivermanagerComponent } from '../../components/drivermanager/drivermanager.component';
 
 @Component({
   selector: 'app-stintplanner',
-  imports: [NavComponent, DrivermanagerComponent, PanelModule],
+  imports: [DrivermanagerComponent, PanelModule],
   templateUrl: './stintplanner.component.html',
   styleUrl: './stintplanner.component.scss'
 })
