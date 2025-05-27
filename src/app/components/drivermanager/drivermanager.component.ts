@@ -10,15 +10,8 @@ import { DriverModel } from '../../models/driver-model';
   styleUrl: './drivermanager.component.scss'
 })
 export class DrivermanagerComponent implements OnInit {
-
+  selectedTabIndex: number = 0;
   drivers: DriverModel[] = [new DriverModel("Udo", 3.2, "", false), new DriverModel("Daniel", 2, "", true)];
 
   ngOnInit(): void {}
-
-  active(driver: DriverModel){
-    if(driver.isActive)
-      return "p-tab-active";
-    else
-      return "";
-  }
 }
