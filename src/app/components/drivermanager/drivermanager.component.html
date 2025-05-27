@@ -7,7 +7,7 @@
     <p-tabpanels>
         @for (driver of drivers; track $index) {
             <p-tabpanel [value]="$index">
-                <app-driver [driver]="drivers[$index]"></app-driver>
+                <app-driver [driver]="driver"></app-driver>
             </p-tabpanel>
         }
     </p-tabpanels>
